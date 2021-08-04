@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body, button, span, p{
+  margin: 0;
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  overflow-y: scroll;
+  background: #e7e7e7;
+  //box-shadow: inset 0 0 4px #cecece;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbcbcb;
+  border-radius: 10px;
+}
