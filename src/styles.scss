@@ -4,7 +4,7 @@ html, body {
   height: 100%;
 }
 
-body, button, span, p{
+body, button, span, p, h1, h2, h3, h4, h5{
   margin: 0;
   font-family: 'Quicksand', sans-serif !important;
 }
@@ -20,3 +20,9 @@ body, button, span, p{
   background: #cbcbcb;
   border-radius: 10px;
 }
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";

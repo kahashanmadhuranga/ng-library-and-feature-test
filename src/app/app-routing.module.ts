@@ -12,6 +12,11 @@ const routes: Routes = [
     path: 'phone-number-input',
     loadChildren: () => import('./features/phone-number-input/phone-number-input.module')
       .then(m => m.PhoneNumberInputModule)
+  },
+  {
+    path: 'how-to-use-github-pages',
+    loadChildren: () => import('./features/github-pages/github-pages.module')
+      .then(m => m.GithubPagesModule)
   }
 ];
 

@@ -1,8 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { PhoneNumberInputRoutingModule } from './phone-number-input-routing.module';
-import { PhoneNumberInputComponent } from './phone-number-input/phone-number-input.component';
+import {PhoneNumberInputRoutingModule} from './phone-number-input-routing.module';
+import {PhoneNumberInputComponent} from './phone-number-input/phone-number-input.component';
+import {NgxIntlTelInputModule} from "ngx-intl-tel-input";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -11,7 +13,11 @@ import { PhoneNumberInputComponent } from './phone-number-input/phone-number-inp
   ],
   imports: [
     CommonModule,
-    PhoneNumberInputRoutingModule
+    PhoneNumberInputRoutingModule,
+    NgxIntlTelInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
-export class PhoneNumberInputModule { }
+export class PhoneNumberInputModule {
+}

@@ -35,6 +35,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/intl-tel-input/build/css/intlTelInput.css",
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
@@ -107,6 +108,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/intl-tel-input/build/css/intlTelInput.css",
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
@@ -114,6 +116,10 @@
               "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
