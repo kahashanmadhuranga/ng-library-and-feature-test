@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { GoogleMapRoutingModule } from './google-map-routing.module';
-import { GoogleMapComponent } from './google-map/google-map.component';
-
+import {GoogleMapRoutingModule} from './google-map-routing.module';
+import {GoogleMapComponent} from './google-map/google-map.component';
+import {GoogleMapsModule} from '@angular/google-maps'
 
 @NgModule({
   declarations: [
@@ -11,7 +11,9 @@ import { GoogleMapComponent } from './google-map/google-map.component';
   ],
   imports: [
     CommonModule,
-    GoogleMapRoutingModule
+    GoogleMapRoutingModule,
+    GoogleMapsModule
   ]
 })
-export class GoogleMapModule { }
+export class GoogleMapModule {
+}

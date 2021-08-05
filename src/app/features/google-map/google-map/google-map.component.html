@@ -1,1 +1,20 @@
 <h2 class="text-center">Google map integration</h2>
+
+<p>Resources:</p>
+
+<a href="https://timdeschryver.dev/blog/google-maps-as-an-angular-component" target="_blank" class="pb-5">
+  google-maps-as-an-angular-component
+</a>
+
+
+<div class="mt-5">
+  <google-map [center]="center" [zoom]="15" [width]="'100%'">
+    <map-marker
+      *ngFor="let marker of markers"
+      [position]="marker.position"
+      [label]="marker.label"
+      [title]="marker.title"
+      [options]="marker.options">
+    </map-marker>
+  </google-map>
+</div>
