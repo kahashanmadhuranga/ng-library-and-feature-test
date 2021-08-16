@@ -43,3 +43,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+src/assets/keys.json
+src/assets/test-map-project-316016-d482ffe775d4.json

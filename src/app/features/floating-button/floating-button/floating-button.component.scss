@@ -1,0 +1,53 @@
+button {
+  border: none;
+  background: #3f51b5;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+}
+
+.main-float-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 35px;
+  padding: 0;
+}
+
+.mat-fab .mat-button-wrapper {
+  padding: 0 !important;
+}
+
+.button-group {
+  display: flex;
+}
+
+.btn-options{
+  opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .button-group {
+    display: block;
+    position: relative;
+
+    button:nth-child(1) {
+      display: block;
+    }
+  }
+
+  .btn-options {
+    position: absolute;
+    bottom: 10px;
+    left: 45px;
+
+    button {
+      min-width: 150px;
+    }
+  }
+
+  button {
+    display: block;
+  }
+}

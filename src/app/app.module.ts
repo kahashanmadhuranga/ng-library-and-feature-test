@@ -8,7 +8,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
-import { WelcomeComponent } from './welcome/welcome.component';
+import {WelcomeComponent} from './welcome/welcome.component';
+import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MatSidenavModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

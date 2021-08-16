@@ -1,0 +1,14 @@
+<h2 class="text-center">Floating Button Group</h2>
+
+<div class="button-group pb-4">
+  <button class="m-1 main-float-button"
+          (click)="animState === 'open' ? animState = 'close' : animState = 'open'"
+          [@mainFloatButton]="animState">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">add</mat-icon>
+  </button>
+  <div class="overflow-hidden btn-options pb-3 ps-2" [@floatButtonGroup]="animState">
+    <button class="m-1">Add new admin</button>
+    <button class="m-1">Add new paramedic</button>
+    <button class="m-1">Add new device</button>
+  </div>
+</div>

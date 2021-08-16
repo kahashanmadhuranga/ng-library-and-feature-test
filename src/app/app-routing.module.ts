@@ -17,6 +17,16 @@ const routes: Routes = [
     path: 'how-to-use-github-pages',
     loadChildren: () => import('./features/github-pages/github-pages.module')
       .then(m => m.GithubPagesModule)
+  },
+  {
+    path: 'angular-fire-storage',
+    loadChildren: () => import('./features/ng-fire-storage/ng-fire-storage.module')
+      .then(m => m.NgFireStorageModule)
+  },
+  {
+    path: 'floating-button-group',
+    loadChildren: () => import('./features/floating-button/floating-button.module')
+      .then(m => m.FloatingButtonModule)
   }
 ];
 
